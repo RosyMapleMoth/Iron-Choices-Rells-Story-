@@ -1,28 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 75, in script
-    with blind
-  File "game/script.rpy", line 75, in <module>
-    with blind
-NameError: name 'blind' is not defined
+  File "renpy/common/00keymap.rpy", line 463, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 463, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 482, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+AttributeError: 'NoneType' object has no attribute 'stores'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 75, in script
-    with blind
-  File "C:\Users\seane\Downloads\renpy-7.4.6-sdk/renpy/ast.py", line 1430, in execute
-    trans = renpy.python.py_eval(self.expr)
-  File "C:\Users\seane\Downloads\renpy-7.4.6-sdk/renpy/python.py", line 2249, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\seane\Downloads\renpy-7.4.6-sdk/renpy/python.py", line 2242, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 75, in <module>
-    with blind
-NameError: name 'blind' is not defined
+  File "renpy/common/00keymap.rpy", line 463, in script
+    python hide:
+  File "C:\Users\seane\Downloads\renpy-7.4.6-sdk/renpy/ast.py", line 922, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\seane\Downloads\renpy-7.4.6-sdk/renpy/python.py", line 2218, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 463, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 482, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "C:\Users\seane\Downloads\renpy-7.4.6-sdk/renpy/loadsave.py", line 394, in save
+    roots = renpy.game.log.freeze(None)
+  File "C:\Users\seane\Downloads\renpy-7.4.6-sdk/renpy/python.py", line 2115, in freeze
+    self.complete(False)
+  File "C:\Users\seane\Downloads\renpy-7.4.6-sdk/renpy/python.py", line 1721, in complete
+    self.current.stores[name], self.current.delta_ebc[name] = sd.get_changes(begin)
+AttributeError: 'NoneType' object has no attribute 'stores'
 
 Windows-10-10.0.19041
 Ren'Py 7.4.6.1693
-Pridemakers 2021 1920 by 1080 1.0
-Fri Jun 18 14:08:28 2021
+ 
+Fri Jun 18 16:37:21 2021

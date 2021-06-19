@@ -28,8 +28,6 @@ label Meeting:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    "unintelligible noises"
-
 
     scene bg noxus png
     show unknown
@@ -73,7 +71,6 @@ label Meeting:
     hide unknown
     with dissolve
 
-
     notRelWink "I know it's not the same as your own power. This was the sigil of another kid, just like you and I."
     "You feel the rock pressing into your hand. It makes you feel a bit better."
 
@@ -100,7 +97,7 @@ label Identity:
             play sound "First Blood Sound.ogg"
             scene you d
             with fade
-            " "
+            "Click to start over"
             return
         "I want to come with you.":
             rell "You can come with me but it might be dangerous, I’m not protecting you if you get in the way!"
@@ -108,10 +105,8 @@ label Identity:
 
     "Rell’s mount forms under her, a huge horse creature formed all out of iron. She offers you a hand up and you get pulled up behind her."
 
-
-
-
-    rell "I was created to be Noxus’ knight in shining iron, to take down Mordekaiser. No matter what I do, I never know who I am. For now, I’m going to keep traveling across Runeterra and try to protect Nulls like you, and fight back against the Black Rose using the powers they stole and forced into me."
+    rell "I was created to be Noxus’ knight in shining iron, to take down Mordekaiser. No matter what I do, I never know who I am."
+    rell "For now, I’m going to keep traveling across Runeterra protecting Nulls like you, and fight back against the Black Rose using the powers they stole and forced into me."
     menu:
         "What did the Black Rose do?":
             rell "They made me fight other kids."
@@ -139,22 +134,33 @@ label Identity:
     show rell base
 
 label Fight:
-    "You ride together on Rell's iron mount towards the next town. She is rather quiet. On the edge of your eyesight you spot dust rolling over the land approaching you. Pointing it out to her, she helps you off her iron horse."
+    "You ride together on Rell's iron mount towards the next town."
+    "She is rather quiet{cps=10}...{/cps}"
+    "On the edge of your eyesight you spot dust rolling over the land approaching you. Pointing it out to her, she helps you off her iron horse."
 
     rell "Stay behind me, and I will keep you safe."
 
-    "The iron horse rears up and charges forward as Rell meets the onslaught of black clad Noxian soldiers. They recognize her instantly and with the postings to capture her alive across the country they instantly engage in combat. It's over fast with metal armor collapsing in on its owner's bodies."
+    "The iron horse rears up and charges forward as Rell meets the onslaught of black clad Noxian soldiers."
+    "They recognize her instantly and with the postings to capture her alive across the country they instantly engage in combat."
+    "It's over fast with metal armor collapsing in on its owner's bodies."
 
     rell "We're free and safe."
 
-    return
+    "The two of you continue riding until nightfall, making camp in a thicket of trees near a field. You find kindling for a fire as Rell hunts."
+    #play sound "fire-crackling-noise.ogg" loop
+    "{i}some time passes{/i}"
+    "Rell comes back with two rabbits, each killed neatly in the head with a small piece of iron."
+    "Rell explains how to prepare the rabbits, cooks them, and eats them with you. Full and relaxed she stares out across the horizon."
 
+    "{cps=10}...{/cps}"
+    #stop sound
 label Beauty:
+
     rell "Noxus can be beautiful."
 
     menu:
         "Not as beautiful as you.":
-            "Gross. You're a bit too old for me."
+            "{b}Gross{/b}. You're a bit too old for me."
         "It's good you can still find beauty in a place as horrible as this.":
             "It is the home of my nightmares but also of my dreams. My dreams of controlling my life and my decisions. My mom can't control my desires any more."
 
@@ -163,17 +169,24 @@ label Lovers:
 
     menu:
         "I bet you like girls more.":
-            rell "I don't know if I'm gay"
+            rell "I’m only 16. I don't know if I'm gay. I’ll figure out my life when I want to."
         "I bet you like boys more.":
-            rell "I don't know if I'm straight"
+            rell "I’m only 16. I don't know if I'm straight. I’ll figure out my life when I want to."
     menu:
         "That makes sense, I don’t think you need to decide right away!":
             rell "Thank you."
         "Surely there is someone you have a crush on!":
             hide rell base
             show rell blush
-            rell "“There might be someone...tall...super-strong armored lady."
+            rell "“There might be someone{cps=10}...{/cps} tall {cps=10}...{/cps} super-strong armored lady."
     hide rell blush
     show rell base
+
 label Ending:
+    scene final
+    with fade
     rell "There's a blue side and a red side in this war, but maybe somewhere in the middle we can make purple"
+
+    "Thank you for playing!"
+
+    "click on to return to the main menu!"

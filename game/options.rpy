@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Iron Choices: Rell's story")
+define config.name = _("Iron Choices: Rell's Story")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,13 +23,24 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "1.0c"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
+define gui.about = _p("""This game was created for PrideMakers 2021 Team Liquid hackathon by:
+Sarah Kangastone @bellbellum#6581
+Seaney Shell @Moth#1574
+Dorina Melegh @niaghtmare#1634
+
+The script was written by Sarah Kangastone with feedback from Seaney Shell and Dorina Melegh in Google Documents.
+Sarah drew all of the graphics in Adobe Photoshop using a mouse.
+Seaney utilized Ren'Py to put the script and graphics together in a playable format.
+
+Song title: 2017 World Championship Theme
+Artist: League of Legends. Arranged by Gerard K. Marino. Performed by Hollywood Chamber Orchestra at the 2017 World Championship, Beijing, China.
+Courtesy of Riot Games https://www.riotgames.com/en/legal
 """)
 
 
@@ -37,7 +48,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "Pridemakers20211920by1080"
+define build.name = "IronChoices"
 
 
 ## Sounds and music ############################################################
@@ -205,4 +216,4 @@ init python:
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
 
-# define build.itch_project = "renpytom/test-project"
+define build.itch_project = "rmm/iron-choices-rells-story"

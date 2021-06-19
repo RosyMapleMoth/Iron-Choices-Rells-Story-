@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 114: unexpected EOF while parsing
-    Dissolve(.2)S
-                 ^
+File "game/options.rpy", line 208: indentation mismatch.
 
 Ren'Py Version: Ren'Py 7.4.6.1693
-Thu Jun 17 23:22:05 2021
+Fri Jun 18 16:37:12 2021
