@@ -12,9 +12,7 @@ Seaney utilized Ren'Py to put the script and graphics together in a playable for
 ![](https://i.imgur.com/WWUhg3l.png)
 
 ## To play the visual novel
-Please download the version best suited to your computer from the Itch.io or GitHub links below. 
-Unzip the file, and open IronChoices.exe (not the 32 version).
-Enjoy!
+Please download the version best suited to your computer from the [Itch.io](https://rmm.itch.io/iron-choices-rells-story)
 
 ## Challenges we ran into
 It was challenging to schedule times for the team to meet up and communicate needs and goals for the project. On future projects we would meet on day 1 and delegate tasks. Having an organization tracker will help a lot!
