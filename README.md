@@ -1,3 +1,10 @@
+Iron Choices Rells Story is a short Visual Novel Cerated with Ren'Py in 1 week for Team liquids Pride Maker Hackathon in 2021
+
+### To play the visual novel
+Please download the version best suited to your computer from the [Itch.io](https://rmm.itch.io/iron-choices-rells-story)
+
+# Below find a write up done by our writter Sarah Kangastone
+
 ## Inspiration
 When we explored different voice lines by the different League champions, Rell's reference to finding other champions Sett, Ekko, Seraphine, and Leona attractive stood out to us as a young adult exploring their sexuality. Representation is important for young adults and having these voice lines in the game made us feel seen and validated. We wanted other people to be more aware of these voice lines as one of the few queer League of Legends champions, and to understand the trauma of a young girl growing up in the brutal war nation of Noxus.
 
@@ -10,9 +17,6 @@ Sarah drew graphics in Adobe Photoshop using a mouse.
 Seaney utilized Ren'Py to put the script and graphics together in a playable format. 
 
 ![](https://i.imgur.com/WWUhg3l.png)
-
-## To play the visual novel
-Please download the version best suited to your computer from the [Itch.io](https://rmm.itch.io/iron-choices-rells-story)
 
 ## Challenges we ran into
 It was challenging to schedule times for the team to meet up and communicate needs and goals for the project. On future projects we would meet on day 1 and delegate tasks. Having an organization tracker will help a lot!
